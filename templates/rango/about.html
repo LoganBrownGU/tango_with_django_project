@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>About</title>
+    </head>
+
+    <body>
+        <h1>About</h1>
+        <p>Cool stuff</p>
+        <strong>{{ boldmessage }}</strong>
+        <img src="{% static 'images/rango.jpg' %}" alt="A teapot on the dry salt bed"/>
+        <a href="/rango/">Home</a>
+    </body>
+</html>
