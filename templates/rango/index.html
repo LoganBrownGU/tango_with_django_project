@@ -11,7 +11,7 @@
         <h1>Rango says...</h1>
 
         <div>
-            <h2>Categories</h2>
+            <h2>Most liked categories</h2>
             {% if categories %}
             <ul>
             {% for category in categories %}
@@ -37,7 +37,8 @@
         </div>
 
         <div>
-            <a href="/rango/about">About</a><br />
+            <a href="/rango/add_category/">Add a new category</a><br>
+            <a href="/rango/about">About</a><br>
             <img src="{{ MEDIA_URL }}dragon.jpg" alt="stanford dragon" />
         </div>
     </body>
