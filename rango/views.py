@@ -55,6 +55,7 @@ def add_page(request, category_name_slug):
         category = None
 
     if category is None:
+        print("CATEGORY IS NONE")
         return redirect('/rango/')
 
     form = PageForm()
@@ -69,7 +70,8 @@ def add_page(request, category_name_slug):
                 page.views = 0
                 page.save()
 
-                return redirect(reverse('rango:show_category'), kwargs={"category_name_slug": category_name_slug})
+                print("REDIRECTING")
+                return redirect("/rango/category/" + category_name_slug)#reverse('rango:show_category'), kwargs={"category_name_slug": category_name_slug})
 
         else:
             print(form.errors)
