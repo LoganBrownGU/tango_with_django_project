@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+    <h1>About</h1>
+    <strong>{{ boldmessage }}</strong><br>
+    <img src="{% static 'images/rango.jpg' %}" alt="A teapot on the dry salt bed"/>
+{% endblock %}
+
+<!--
 <html>
     <head>
         <title>About</title>
@@ -15,3 +29,4 @@
         <a href="/rango/">Home</a>
     </body>
 </html>
+-->
