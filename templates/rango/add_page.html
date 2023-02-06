@@ -27,33 +27,3 @@
     The specified category does not exist
     {% endif %}
 {% endblock %}
-
-<!--
-<html>
-    <head>
-        <title>Add page</title>
-    </head>
-
-    <body>
-        <h1>Add page</h1>
-
-        <script>
-            console.log("slug: {{ category.slug }}");
-        </script>
-
-        <form id="page_form" method="post" action="/rango/category/{{ category.slug }}/add_page/">
-            {% csrf_token %}
-            {% for hidden in form.hidden_fields %}
-                    {{ hidden }}
-            {% endfor %}
-
-            {% for field in form.visible_fields %}
-                {{ field.errors }}
-                {{ field.help_text }}
-                {{ field }}
-            {% endfor %}
-            <input type="submit" name="submit" value="Create page"/>
-        </form>
-    </body>
-</html>
--->

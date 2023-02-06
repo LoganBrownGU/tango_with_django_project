@@ -29,32 +29,3 @@
     The specified category does not exist
     {% endif %}
 {% endblock %}
-
-<!--
-<html>
-    <head>
-        <title>Categories</title>
-    </head>
-
-    <body>
-        <div>
-            {% if category %}
-            <h1>{{ category.name }}</h1>
-                {% if pages %}
-                <ul>
-                    {% for page in pages %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                {% else %}
-                <strong>No pages currently in directory</strong>
-                {% endif %}
-                <a href="/rango/category/{{ category.slug }}/add_page/">Add new page to category</a><br>
-            {% else %}
-                The specified category does not exist
-            {% endif %}
-        </div>
-        <a href="/rango/">Home</a>
-    </body>
-</html>
--->
