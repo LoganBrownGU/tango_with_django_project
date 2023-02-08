@@ -12,5 +12,9 @@
 {% block body_block %}
     <h1>About</h1>
     <strong>{{ boldmessage }}</strong><br>
-    <img src="{% static 'images/rango.jpg' %}" alt="A teapot on the dry salt bed"/>
+    <img src="{% static 'images/rango.jpg' %}" alt="A teapot on the dry salt bed"/><br>
+
+    {% if visits %}
+    <strong>You have visited the site {{ visits }} time(s)</strong>
+    {% endif %}
 {% endblock %}
