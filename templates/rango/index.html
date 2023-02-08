@@ -10,6 +10,14 @@
 {% block body_block %}
     <h1>Rango says...</h1>
 
+    <strong>
+    {% if user.is_authenticated %}
+        Howdy {{ user.username }}!
+    {% else %}
+        Hey there partner!
+    {% endif %}
+    </strong>
+
     <div>
         <h2>Most liked categories</h2>
         {% if categories %}
